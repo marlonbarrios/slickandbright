@@ -9,7 +9,7 @@ let canvas;
 
 function preload() {
   // font = loadFont('Anton-Regular.ttf');
-  bg = loadImage("img.png");
+  bg = loadImage("https://storage.ning.com/topology/rest/1.0/file/get/10966932285?profile=original");
 }
 
 function setup() {
@@ -114,8 +114,9 @@ function mbsFramework() {
 
 function credits() {
 //credits
-  createP("sleek and bight");
+createP("an elastic deity, with circuits and code,  sleek and bright,  dreaming data day and night, a neon-lit world");
   createP("Image created in collaboration with DALL-E based on short poem created with ChatGPT  with generative animation in P5 | Studies of Synthetic Creativity");
+
   createP("Press 's' to save a png image");
   var link =createA("https://marlonbarrios.github.io/", "Concept and Programming by Marlon Barrios Solano");
 
