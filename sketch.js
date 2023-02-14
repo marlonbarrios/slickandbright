@@ -5,10 +5,10 @@ let speedY;
 let font;
 let bg;
 let canvas;
-let lines = [  "an elastic deity",  "with circuits and code",  "sleek and bright",  "dreaming data day and night", "a neon-lit world"];
+// let lines = [  "an elastic deity",  "with circuits and code",  "sleek and bright",  "dreaming data day and night", "a neon-lit world"];
 
 function preload() {
-  font = loadFont('Anton-Regular.ttf');
+  // font = loadFont('Anton-Regular.ttf');
   bg = loadImage("img.png");
 }
 
@@ -18,10 +18,10 @@ function setup() {
   y = height / 2;
   speedX = random(-5, 5);
   speedY = random(-5, 5);
-  textFont(font);
-  textSize(24);
-  textSize(30);
-  textAlign(RIGHT, RIGHT);
+  // textFont(font);
+  // textSize(24);
+  // textSize(30);
+  // textAlign(RIGHT, RIGHT);
   mbsFramework();
   credits();
 }
@@ -62,12 +62,12 @@ noStroke()
   }
   fill(255);
   
-  let lineHeight = height - 200;
-  for (let i = 0; i < lines.length; i++) {
-    text(lines[i], width * 0.97, lineHeight);
+  // let lineHeight = height - 200;
+  // for (let i = 0; i < lines.length; i++) {
+  //   text(lines[i], width * 0.97, lineHeight);
    
-    lineHeight += 40;
-  }
+  //   lineHeight += 40;
+  // }
 }
 
 
@@ -115,7 +115,7 @@ function mbsFramework() {
 function credits() {
 //credits
   createP("sleek and bight");
-  createP("Image created in collaboration with DALL-E based on short poem created with ChatGPT  with generative animation in P5 | Studies of Synthetic Creativity" );
+  createP("Image created in collaboration with DALL-E based on short poem created with ChatGPT  with generative animation in P5 | Studies of Synthetic Creativity");
   createP("Press 's' to save a png image");
   var link =createA("https://marlonbarrios.github.io/", "Concept and Programming by Marlon Barrios Solano");
 
