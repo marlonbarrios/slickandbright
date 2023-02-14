@@ -20,7 +20,8 @@ function setup() {
   speedY = random(-5, 5);
   textFont(font);
   textSize(24);
-  textAlign(CENTER, CENTER);
+  textSize(30);
+  textAlign(RIGHT, RIGHT);
   mbsFramework();
   credits();
 }
@@ -39,10 +40,12 @@ noStroke()
   fill('#22fbfb');
   stroke(0)
   strokeWeight(2)
-  line(x, height, x,y)
-  line( x, 0, x,y)
+
+  line( x, height, x,y)
   line(0, height/2, x,y)
   line(width, height/2, x,y)
+  stroke('#22fbfb')
+  line( width * 0.685, height * 0.23, x,y)
   noStroke()
   ellipse(x, y, 20, 30);
   x += speedX;
@@ -62,8 +65,7 @@ noStroke()
   let lineHeight = height - 200;
   for (let i = 0; i < lines.length; i++) {
     text(lines[i], width * 0.97, lineHeight);
-    textSize(30);
-    textAlign(RIGHT, RIGHT);
+   
     lineHeight += 40;
   }
 }
