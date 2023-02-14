@@ -8,7 +8,7 @@ let canvas;
 let lines = [  "an elastic deity",  "with circuits and code",  "sleek and bright",  "dreaming data day and night", "a neon-lit world"];
 
 function preload() {
-  font = loadFont('Anton-regular.ttf');
+  font = loadFont('Anton-Regular.ttf');
   bg = loadImage("img.png");
 }
 
